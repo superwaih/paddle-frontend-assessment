@@ -1,8 +1,11 @@
 import React from 'react'
+import HeroText from '../components/HeroText'
 
 const ComingSoon = () => {
   return (
-    <div>ComingSoon</div>
+    <>
+    <HeroText />
+    </>
   )
 }
 

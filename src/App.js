@@ -9,8 +9,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <h2 className="text-2xl" >Hellow word</h2>
+    <div className="App h-screen">
      <Navbar />
 
      <Routes>
