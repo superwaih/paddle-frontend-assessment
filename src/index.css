@@ -5,3 +5,12 @@
 body{
     background-image: linear-gradient(to right, #07264f, #201a38, #201223, #180912, #000000);
 }
+html{
+    scroll-behavior: smooth ;
+}
+
+
+.wait-input{
+    background: none;
+    border-bottom: 1px solid gray;
+}

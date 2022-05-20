@@ -5,11 +5,12 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import ComingSoon from "./pages/ComingSoon";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App h-screen">
+    <div className="App ">
      <Navbar />
 
      <Routes>
@@ -18,6 +19,7 @@ function App() {
      <Route path='/blog' exact element={<Blog /> } />
      <Route path='/about' exact element={<About /> } />  
       </Routes>
+      <Footer />
     </div>
     </BrowserRouter>
   );
