@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className='flex justify-between m-auto p-8 lg:p-16'>
       <div className="logo  w-1/4">
         <Link to='/' >
-        <img src="" alt="" srcset="" />
+        <img src="" alt=""  />
         <h1 className='font-bold lg:text-xl text-white' >METRICKS</h1>
         </Link>
       </div>
@@ -20,6 +20,9 @@ const Navbar = () => {
 
         <Link  className='md:px-6' to='/blog'>
           blog
+        </Link>
+        <Link to='/github'>
+          Gitub
         </Link>
 
         <Link  className=' p-4 duration-300 hover:bg-blue-200 hover:text-black  bg-blue-700 rounded-full shadow-xl ' to='/contact'>

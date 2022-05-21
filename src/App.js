@@ -6,6 +6,7 @@ import Blog from "./pages/Blog";
 import ComingSoon from "./pages/ComingSoon";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Github from "./pages/Github";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
      <Route path='/contact' exact element={<Contact /> } />
      <Route path='/blog' exact element={<Blog /> } />
      <Route path='/about' exact element={<About /> } />  
+     <Route path='/github' exact element={<Github /> } />  
+     
       </Routes>
       <Footer />
     </div>

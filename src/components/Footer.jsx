@@ -20,7 +20,7 @@ const Footer = () => {
              Privacy Policy
             </h4>
       </div>
-      <div className="copyright text-gray-400 text-xl">
+      <div className="copyright text-center text-gray-400 text-xl">
           <p>Copyright 2021 @ Peddle Technologies. All Rights Reserved</p>
       </div>
     </footer>
