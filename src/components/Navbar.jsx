@@ -13,7 +13,7 @@ const Navbar = () => {
       
 
 
-      <nav className='nav-links hidden lg:w-2/5 md:w-3/5 space-x-6  items-center md:block flex gap-8 lg:gap-12 text-white uppercase' >
+      <nav className='nav-links hidden flex-end lg:w-5/12 xl:w-4/12 md:w-6/12 space-x-4  items-center md:block flex text-white uppercase' >
         <Link className='' to='/about'>
           about us
         </Link>

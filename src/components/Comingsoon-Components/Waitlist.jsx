@@ -13,7 +13,7 @@ const Waitlist = () => {
 
         <div className='email-input mt-8 lg:relative flex-col lg:flex-row flex'>
             <input className='p-4 md:w-[30rem] lg:w-[45rem] rounded-full outline-none' placeholder='Enter your email address' type="text" />
-            <button className='uppercase m-4 lg:m-0 lg:w-[20rem] text-white  lg:-right-20 rounded-full text-center p-2 md:pr-4 md:py-4 bg-blue-700 font-[16px] rounded lg:absolute'>Join our waiting list</button>
+            <button className='uppercase m-4 lg:m-0 lg:w-[20rem] text-white  lg:-right-20 rounded-full text-center p-2 md:pr-4 md:py-4 bg-blue-700 font-[16px] rounded-full lg:absolute'>Join our waiting list</button>
         </div>
     </div>
   )

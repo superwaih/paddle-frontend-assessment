@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +10,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background: transparent url('./img/Path1.png') 0% 0% no-repeat padding-box;
@@ -38,4 +41,11 @@ background: transparent linear-gradient(180deg, #213F72 0%, #19073B 100%) 0% 0% 
 opacity: 1;
 backdrop-filter: blur(16px);
 -webkit-backdrop-filter: blur(16px)
+}
+
+.box1{
+    background: transparent linear-gradient(180deg, rgba(33, 63, 114, 1) 0%, rgba(25, 7, 59, 1) 100%) 0% 0% no-repeat padding-box;
+    opacity: .6;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px)
 }

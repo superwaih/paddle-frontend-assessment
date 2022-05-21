@@ -42,8 +42,8 @@ const Github = () => {
         {error && <div>An error occured</div>}
         {/* showing this while the data is loading */}
              {loading &&
-             
-              <div className="flex flex-col items-center  space-y-3 animate-pulse p-4 container mx-auto max-w-2xl">
+              <div className="flex flex-col space-y-3 animate-pulse p-4 container mx-auto max-w-2xl">
+
                 <div className="h-40 bg-gray-300 mt-5 rounded-md"></div>
                 <div className="h-8 bg-gray-300 mt-5 rounded-md"></div>
                 <div className="h-40 bg-gray-300 mt-5 rounded-md"></div>
