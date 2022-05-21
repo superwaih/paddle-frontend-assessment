@@ -2,15 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-image: linear-gradient(to right, #07264f, #201a38, #201223, #180912, #000000);
-}
-html{
-    scroll-behavior: smooth ;
-}
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: transparent url('./img/Path1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    /* height: 1989px; */
+    
+}
 
 .wait-input{
     background: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #F6F7F9;
+    opacity: 0.26;
+}
+.form-container{
+    background: transparent linear-gradient(180deg, #210045 0%, #0C0123 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.8;
+}
+
+.other-box{
+    top: 0px;
+left: 0px;
+width: 960px;
+height: 1619px;
+
+/* UI Properties */
+
+background: transparent linear-gradient(180deg, #213F72 0%, #19073B 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px)
 }

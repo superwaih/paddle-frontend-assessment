@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import RepoDetails from '../components/RepoDetails'
+import RepoDetails from '../components/Github-Components/RepoDetails'
 import axios from 'axios';
 
-const PAGE_NUMBER = 1
+const PAGE_NUMBER = 1;
 const Github = () => {
     const[data, setData] = useState([])
     const [page, setPage] = useState(PAGE_NUMBER);
@@ -25,11 +25,12 @@ const Github = () => {
         })
     }, [page])
 
+    //if user is at the end of the page add 1 to the page number
     const scrollToEnd = () =>{
         setPage(page + 1);
     }
     
-
+    // Checking if the page has reached the bottom
     window.onscroll = function (){
        if(window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
            scrollToEnd()
@@ -41,8 +42,8 @@ const Github = () => {
         {error && <div>An error occured</div>}
         {/* showing this while the data is loading */}
              {loading &&
-              <div className="flex flex-col space-y-3 animate-pulse p-4 container mx-auto max-w-2xl">
-                <div className="h-6 bg-gray-300 mt-5 rounded-md"></div>
+             
+              <div className="flex flex-col items-center  space-y-3 animate-pulse p-4 container mx-auto max-w-2xl">
                 <div className="h-40 bg-gray-300 mt-5 rounded-md"></div>
                 <div className="h-8 bg-gray-300 mt-5 rounded-md"></div>
                 <div className="h-40 bg-gray-300 mt-5 rounded-md"></div>

@@ -3,13 +3,13 @@ import { AiFillGithub, AiFillYoutube, AiFillFacebook, AiFillLinkedin, AiFillInst
 
 const Footer = () => {
   return (
-    <footer className='foot-container  flex flex-col mt-20 flex justify-center mb-20 items-center m-auto'>
+    <footer className='foot-container  flex flex-col mt-24 flex justify-center mb-4 items-center m-auto'>
       <div className="icons flex gap-8">
-        <AiFillYoutube className='brightness-90 invert' size={32} />
-        <AiFillFacebook className='brightness-90 invert' size={32}/>
-        <AiFillInstagram className='brightness-90 invert' size={32} />
-        <AiFillLinkedin className='brightness-90 invert'  size={32} />
-        <AiFillTwitterSquare className='brightness-90 invert' size={32} />
+        <AiFillYoutube className='brightness-90 invert opacity-30' size={32} />
+        <AiFillFacebook className='brightness-90 invert opacity-30' size={32}/>
+        <AiFillInstagram className='brightness-90 invert opacity-30' size={32} />
+        <AiFillLinkedin className='brightness-90 invert opacity-30'  size={32} />
+        <AiFillTwitterSquare className='brightness-90 invert opacity-30' size={32} />
       </div>
       <div className="terms text-gray-400 flex text-xl justify-between" >
             <h4 className='p-4'>
