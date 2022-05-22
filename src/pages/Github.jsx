@@ -13,14 +13,11 @@ const Github = () => {
         setLoading(true)
         axios.get(`https://api.github.com/search/repositories?q=created:>2021-08-13&sort=stars&order=desc&page=${page}`)
         .then(res => {
-            console.log(res.data.items)
-            setData([...data, ...res.data.items])
-            setLoading(false)
-            
-            
+            setData(prev => [...prev, ...res.data.items])
+            // setData([...data, ...res.data.items])
+            setLoading(false)    
         })
         .catch(err =>{
-            console.log(err)
             setError(true)
         })
     }, [page])
@@ -37,7 +34,7 @@ const Github = () => {
        }
     }
     return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 p-12' >
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-2 xl:grid-cols-3 p-12' >
         {/* if an error occurs return this  */}
         {error && <div>An error occured</div>}
         {/* showing this while the data is loading */}
